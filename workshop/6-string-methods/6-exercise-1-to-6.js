@@ -51,6 +51,9 @@ console.log(`A1) Morty has ${numberOfNames} names`);
 // Convert the alternateRicks string to an array, so that each name ("Simple
 // Rick") is an element in that array. Log that array to the console.
 
+let rickArray = alternateRicks.split();
+console.log(rickArray);
+
 //
 //
 //
@@ -59,12 +62,19 @@ console.log(`A1) Morty has ${numberOfNames} names`);
 // How many Ricks have been named in alternateRicks?
 // HINT: There are multiple ways to solve this one. Maybe try a `for` loop!
 
+let rickArray = alternateRicks.split();
+console.log(rickArray.length);
+
 //
 //
 //
 //
 // Q4
 // How many characters are there in rickSaying (without spaces)?
+
+let rickSayingCount = rickSaying.split(' ');
+rickSayingCount = rickSayingCount.join('');
+console.log(rickSayingCount.length);
 
 //
 //
@@ -74,12 +84,16 @@ console.log(`A1) Morty has ${numberOfNames} names`);
 // It turns out, Morty doesn't actually have a middle name. The `grandson`
 // string is wrong! Console Morty's name without "Antoine".
 
+console.log(grandson.slice(0, 6) + grandson.slice(14, 19));
+
 //
 //
 //
 //
 // Q6
 // Scary Terry is actually not an enemy. Remove him from the list and console only Rick's true enemies.
+
+console.log(enemies.replace("Scary Terry, ", ""));
 
 //
 //

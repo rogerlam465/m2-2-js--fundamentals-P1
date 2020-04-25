@@ -11,8 +11,16 @@
 // Q5
 // Returns a new list with all the elements of lst that are length
 // greater than 5
-function keepLong(lst) {
+function keepLong(first) {
   // lst is an array of strings
+  let outputArray = first.filter(function (e) {
+    if (e.length > 5) {
+      return e;
+    }
+  })
+
+  console.log(outputArray);
+
 }
 
 console.log(
