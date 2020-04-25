@@ -14,6 +14,10 @@
 
 function greet(lst) {
   // lst is an array of strings
+  let newGreet = lst.map(function (e) {
+    return "Hello " + e;
+  })
+  return newGreet;
 }
 
 console.log('Q6 greet()', greet(['David', 'Billy', 'Lisa', 'Jennifer']));
