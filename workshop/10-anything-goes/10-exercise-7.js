@@ -13,11 +13,21 @@
 
 function map(lst, func) {
   // lst is an array and func is a function
+
+  let resultingArray = [];
+
+  lst.forEach(function (item) {
+    resultingArray.push(func(item));
+  });
+
+  return resultingArray;
 }
+
 // -------------------------------------------------------------------------
 function charCount(str) {
   return str.length;
 }
+
 console.log(
   'Q7: ',
   map(['Cyborg', 'Robin', 'Batman', 'Superman', 'Aquaman', 'Flash'], charCount)
